@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  color: #000;
+  font-size: 30px;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+}
+
+.screen {
+  width: 12em;
+
+  padding: 3em 0;
+  border: 1px solid #000;
+  position: relative;
+}
+.screen > span {
+  position: absolute;
+  bottom: 0.5em;
+  right: 0.5em;
+}
+
+.row {
+  display: flex;
+}
+
+.row button {
+  width: 3em;
+  color: #fff;
+  background: #000;
+  border: solid 1px #fff;
+  padding: 1em 0;
+}
+
+.row button:focus {
+  color: #000;
+  background: #fff;
+  border: solid 1px #000;
+  outline: none;
+}
+button.b-Clear {
+  width: 9em;
+}
+button.b-0 {
+  width: 6em;
+}
